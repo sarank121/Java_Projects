@@ -1,0 +1,20 @@
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - defaultSnykApiToken:
+              description: "Snyk token for Jenkins plugin integration"
+              id: "snyk-api"
+              scope: GLOBAL
+              token: "e12028ae1bffddc212fc826faabf27b8c816d4b9"
+tool:
+  snyk:
+    installations:
+      - name: "Snyk-Latest"
+        home: ""
+        properties:
+          - installSource:
+              installers:
+                - snykInstaller:
+                    updatePolicyIntervalHours: 24
+                      version: "latest"
